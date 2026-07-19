@@ -15,13 +15,13 @@ Team Name : 약속(藥SLOT)은 지켜야제
 * Project Leader
 * Git Manager
 * Create Demo Device yak_slot for Develop
-* 
 
-
-** Shin Yuji [ shinyuji ] **
+**Shin Yuji [ shinyuji ]**
 
 * atmega128
 * atmega and rpi Integration
+
+**Other_people [ who_are_you ]**
 
 ## How to manage
 1. manager가 feature 브랜치에서 main 브랜치로의 PR을 확인하고 merge
