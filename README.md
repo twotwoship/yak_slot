@@ -12,9 +12,9 @@ Team Name : 약속(藥SLOT)은 지켜야제
 
 **Lee yangbae [ two two ship ]**
 
-● Project Leader
-● Git Manager
-● Create Device and Deliverables for Develop
-●
+* Project Leader
+* Git Manager
+* Create Device and Deliverables for Develop
+* 
 
 ** Shin Yuji [ two two ship ]**
