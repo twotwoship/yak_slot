@@ -17,4 +17,40 @@ Team Name : 약속(藥SLOT)은 지켜야제
 * Create Device and Deliverables for Develop
 * 
 
-** Shin Yuji [ two two ship ]**
+
+** Shin Yuji [ shinyuji ] **
+
+* atmega128
+* 
+
+## How to manage
+1. manager가 feature 브랜치에서 main 브랜치로의 PR을 확인하고 merge
+2. 문제가 있다면 code에 대한 comment나 issue를 통해 feedback을 거쳐 해결
+
+## How to Code and PR
+
+1. 
+  '''
+  git clone [저장소명]
+  cd [폴더명]
+  git fetch origin
+  git checkout -t origin/[본인이 담당한 브랜치 명]
+  '''
+3. commit 규칙에 맞게 code 업로드하기
+   
+4. 원격 저장소로 브랜치 push
+   
+5. GitHub에서 main 브랜치 방향으로 PR(Pull Request) 생성
+
+
+### PR 규칙
+* 작업 기간, 작업명, 본인 이름 포함하여 PR
+  '''
+  26/07/19 ~ 26/07/23 스테빙_모터_제어_수정34 이양배
+  '''
+
+### Commit 규칙
+* commit message: code 제목
+  '''
+  git commit -m "system_server.c"
+  '''
