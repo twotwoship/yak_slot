@@ -52,5 +52,5 @@ Team Name : 약속(藥SLOT)은 지켜야제
 ## Commit 규칙
 * commit message: code 제목
   ```
-  git commit -m "system_server.c"
+  git commit -m "atmega128a_uart.c"
   ```
