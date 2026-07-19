@@ -21,7 +21,7 @@ Team Name : 약속(藥SLOT)은 지켜야제
 ** Shin Yuji [ shinyuji ] **
 
 * atmega128
-* 
+* atmega and api Integration
 
 ## How to manage
 1. manager가 feature 브랜치에서 main 브랜치로의 PR을 확인하고 merge
@@ -51,6 +51,6 @@ Team Name : 약속(藥SLOT)은 지켜야제
 
 ## Commit 규칙
 * commit message: code 제목
-  '''
+  ```
   git commit -m "system_server.c"
-  '''
+  ```
