@@ -30,12 +30,12 @@ Team Name : 약속(藥SLOT)은 지켜야제
 ## How to Code and PR
 
 1. 
-  '''
+```
   git clone [저장소명]
   cd [폴더명]
   git fetch origin
   git checkout -t origin/[본인이 담당한 브랜치 명]
-'''
+```
 3. commit 규칙에 맞게 code 업로드하기
    
 4. 원격 저장소로 브랜치 push
