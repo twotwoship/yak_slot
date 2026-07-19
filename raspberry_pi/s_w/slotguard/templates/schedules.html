@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>일정 관리</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <h1>일정 관리</h1>
+
+        <a href="{{ url_for('dashboard') }}">
+            ← 대시보드
+        </a>
+
+        <section class="panel">
+            <h2>새 일정 등록</h2>
+
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+
+            <form method="post">
+                <label>
+                    포장 회차
+                    <input type="number"
+                           name="pack_id"
+                           min="1"
+                           value="1"
+                           required>
+                </label>
+
+                <label>
+                    슬롯 번호
+                    <input type="number"
+                           name="slot"
+                           min="1"
+                           max="10"
+                           required>
+                </label>
+
+                <label>
+                    예정 날짜
+                    <input type="date"
+                           name="scheduled_date"
+                           required>
+                </label>
+
+                <label>
+                    예정 시각
+                    <input type="time"
+                           name="scheduled_time"
+                           required>
+                </label>
+
+                <button type="submit">
+                    일정 저장
+                </button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>저장된 일정</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>회차</th>
+                            <th>슬롯</th>
+                            <th>예정 시각</th>
+                            <th>상태</th>
+                            <th>ATmega 전송</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for schedule in schedules %}
+                            <tr>
+                                <td>{{ schedule.id }}</td>
+                                <td>{{ schedule.pack_id }}</td>
+                                <td>{{ schedule.slot }}</td>
+                                <td>{{ schedule.scheduled_at }}</td>
+                                <td>{{ schedule.status }}</td>
+                                <td>
+                                    {% if schedule.synced %}
+                                        전송 완료
+                                    {% else %}
+                                        미전송
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="6">
+                                    등록된 일정이 없습니다.
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

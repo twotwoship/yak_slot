@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+    color: #202124;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: min(100% - 24px, 900px);
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.notice {
+    padding: 14px;
+    border-left: 5px solid #f59e0b;
+    background: #fff7df;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.status-card {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+}
+
+.status-card strong {
+    font-size: 32px;
+}
+
+.status-card.waiting {
+    border-top: 5px solid #777;
+}
+
+.status-card.allowed {
+    border-top: 5px solid #2563eb;
+}
+
+.status-card.dispensed {
+    border-top: 5px solid #16a34a;
+}
+
+.status-card.missed {
+    border-top: 5px solid #dc2626;
+}
+
+.button,
+button {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #1d4ed8;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.panel {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    background: white;
+}
+
+form {
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    display: grid;
+    gap: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.error {
+    padding: 10px;
+    color: #b91c1c;
+    background: #fee2e2;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap;
+}
