@@ -43,13 +43,13 @@ Team Name : 약속(藥SLOT)은 지켜야제
 5. GitHub에서 main 브랜치 방향으로 PR(Pull Request) 생성
 
 
-### PR 규칙
+## PR 규칙
 * 작업 기간, 작업명, 본인 이름 포함하여 PR
   '''
   26/07/19 ~ 26/07/23 스테빙_모터_제어_수정34 이양배
   '''
 
-### Commit 규칙
+## Commit 규칙
 * commit message: code 제목
   '''
   git commit -m "system_server.c"
